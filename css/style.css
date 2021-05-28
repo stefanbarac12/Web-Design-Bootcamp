@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+/* rgba(109, 46, 70, .7) */
+/* rgb(162, 103, 105) */
+/* rgb(213, 185, 178) */
+/* rgb(236, 226, 208) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #ece2d0;
+  color: #333;
+  line-height: 1.7;
+}
+
+p {
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+footer {
+  background-color: #6d2e46;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 60px 0;
+}
+
+main {
+  background: linear-gradient(rgba(162, 103, 105, 0.9), rgba(213, 185, 178, 0.9), rgba(236, 226, 208, 0.9)), url(../img/header.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+main header {
+  padding: 100px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main header i {
+  color: #6d2e46;
+  font-size: 5rem;
+}
+
+main header h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+main header p {
+  margin: 20px 0;
+}
+
+main header button {
+  padding: 15px 30px;
+  background: #6d2e46;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+main header button:hover {
+  background-color: #fff;
+  color: #6d2e46;
+}
+
+main .techs {
+  text-align: center;
+  padding-top: 500px;
+  padding-bottom: 60px;
+}
+
+main .techs article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+main .techs article div {
+  flex: 0 0 20%;
+}
+
+main .techs article div h2 {
+  font-size: 2rem;
+}
+
+main .techs article div i {
+  font-size: 4rem;
+  color: #6d2e46;
+  margin: 20px 0;
+}
+
+main .techs button {
+  padding: 15px 30px;
+  background: #6d2e46;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+main .techs button:hover {
+  background-color: #fff;
+  color: #6d2e46;
+}
+
+.knjige {
+  color: #fff;
+  background-color: #a26769;
+  text-align: center;
+  padding: 30px 100px;
+}
+
+.knjige h2 {
+  font-size: 2rem;
+}
+
+.knjige p {
+  margin: 20px 0;
+}
+
+.knjige article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.knjige article div {
+  flex: 0 0 48%;
+}
+
+.knjige article div p {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.knjige button {
+  padding: 15px 30px;
+  background: #6d2e46;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.knjige button:hover {
+  background-color: #fff;
+  color: #6d2e46;
+}
+
+.blog {
+  background-color: #ece2d0;
+  text-align: center;
+  padding: 30px 100px;
+  margin-bottom: 60px;
+}
+
+.blog h2 {
+  font-size: 2rem;
+}
+
+.blog p {
+  margin: 20px 0;
+}
+
+.blog article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog article div {
+  flex: 0 0 30%;
+}
+
+.blog article div p {
+  margin: 20px 0;
+}
+
+.blog button {
+  padding: 15px 30px;
+  background: #6d2e46;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.blog button:hover {
+  background-color: #fff;
+  color: #6d2e46;
+}
+
+@media (max-width: 767px) {
+  main header i {
+    font-size: 4rem;
+  }
+  main header h1 {
+    font-size: 2rem;
+  }
+  main header p {
+    text-align: center;
+  }
+  main .techs {
+    padding-top: 300px;
+  }
+  main .techs article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .techs article div {
+    margin-bottom: 30px;
+  }
+  .knjige {
+    padding: 30px 20px;
+  }
+  .knjige article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog {
+    padding: 30px 20px;
+  }
+  .blog article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog article div {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

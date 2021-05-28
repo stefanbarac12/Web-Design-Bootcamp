@@ -1,0 +1,183 @@
+@import 'starter';
+@import 'mixins';
+
+main {
+    background: linear-gradient(
+        rgba(162, 103, 105, .9),
+        rgba(213, 185, 178, .9),
+        rgba(236, 226, 208, .9)
+    ), url(../img/header.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    header {
+        padding: 100px 0 0 0;
+        @include flex(center, center, column);
+    
+        i {
+            color: $red;
+            font-size: 5rem;
+        }
+    
+        h1 {
+            font-size: 4rem;
+            color: $white;
+        }
+    
+        p {
+            margin: 20px 0;
+        }
+    
+        button {
+            @include btn($red, $white, $white, $red);
+        }
+    }
+    
+    .techs {
+        text-align: center;
+        padding-top: 500px; 
+        padding-bottom: 60px;
+
+        article {
+            @include flex(space-between, center);
+            margin-bottom: 30px;
+    
+            div {
+                flex: 0 0 20%;   
+    
+                h2 {
+                    font-size: 2rem;
+                }
+        
+                i {
+                    font-size: 4rem;
+                    color: $red;
+                    margin: 20px 0;
+                }
+            }
+        }
+    
+        button {
+            @include btn($red, $white, $white, $red);
+        }
+    }  
+}
+
+.knjige {
+    color: $white;
+    background-color: $orange;
+    text-align: center;
+    padding: 30px 100px;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    article {
+        @include flex(space-between, center);
+        width: 70%;
+        margin: 0 auto;
+
+        div {
+            flex: 0 0 48%;
+
+            p {
+                margin: 20px 0;
+                text-align: left;
+            }
+        }
+    }
+
+    button {
+        @include btn($red, $white, $white, $red);
+    }
+}
+
+.blog {
+    background-color: $body;
+    text-align: center;
+    padding: 30px 100px;
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    article {
+        @include flex(space-between, center);
+        width: 70%;
+        margin: 0 auto;
+
+        div {
+            flex: 0 0 30%;
+
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    button {
+        @include btn($red, $white, $white, $red);
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        header {
+            i {                     
+                font-size: 4rem;
+            }
+        
+            h1 {
+                font-size: 2rem;
+            }
+        
+            p {
+                text-align: center
+            }
+        }
+        
+        .techs {
+            padding-top: 300px; 
+    
+            article {
+                @include flex(space-between, center, column);
+
+                div {
+                    margin-bottom: 30px;
+                }
+            }
+        }  
+    }
+    
+    .knjige {
+        padding: 30px 20px;
+    
+        article {
+            @include flex(space-between, center, column);
+        }
+    }
+    
+    .blog {
+        padding: 30px 20px;
+
+        article {
+            @include flex(space-between, center, column);
+    
+            div {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
